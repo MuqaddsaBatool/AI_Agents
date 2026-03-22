@@ -1,4 +1,3 @@
-# retriever.py
 # Hybrid retrieval: dense vector search + BM25 sparse search
 # combined via Reciprocal Rank Fusion (RRF)
 
