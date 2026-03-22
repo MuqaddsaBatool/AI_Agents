@@ -1,12 +1,8 @@
 import json
 import os
 from datetime import datetime
-from dotenv import load_dotenv
 from openai import OpenAI
 from tools import TOOLS, run_tool
-
-
-load_dotenv()
 client = OpenAI()
 
 # ── System prompt ─────────────────────────────────────────────────────────────

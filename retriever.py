@@ -3,12 +3,9 @@
 # combined via Reciprocal Rank Fusion (RRF)
 
 import os
-from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from rank_bm25 import BM25Okapi
-
-load_dotenv()
 
 CHROMA_DIR = "chroma_db"
 

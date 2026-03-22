@@ -1,9 +1,7 @@
 import os
 import requests
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
 from retriever import retrieve
-load_dotenv()
 
 def web_search(query: str) -> str:
     """Search the web using Serper API and return top results."""
@@ -115,7 +113,7 @@ def run_tool(tool_name: str, tool_input: str) -> str:
     
     return tool(tool_input)
 #Testing
-# if __name__ == "__main__":
-#     print(web_search("ReAct language model agent"))
-#     print("---")
-#     print(write_file("test.txt", "hello from agent"))
+if __name__ == "__main__":
+    print(web_search("ReAct language model agent"))
+    print("---")
+    print(write_file("test.txt", "hello from agent"))
